@@ -1,0 +1,57 @@
+.navbar{
+    height: 80px;
+
+    .wrapper{
+        padding: 10px 30px;                 /* padding 10px top and bottom, 30px left and right */
+        display: flex;                      /* The items will be displayed in a row (the default direction) */
+        align-items: center;                /* The items will be centered vertically */
+        justify-content: space-between;     /* Items will be evenly distributed in the line; first item is on the start line, last item on the end line */
+
+        .item{
+            display: flex;
+            align-items: center;
+            font-size: 18px;
+        }
+
+        .left{
+            display: flex;
+            align-items: center;
+            gap: 25px;
+        }
+        .center{
+            font-size: 30px;
+            letter-spacing: 2px;
+        }
+        .right{
+            display: flex;
+            align-items: center;
+            gap: 25px;
+
+            .icons{
+                display: flex;
+                gap: 15px;
+                color: #777;
+                cursor: pointer;
+
+                .cartIcon{
+                    position: relative;         /* Element is positioned relative to its normal position */
+
+                    span{
+                        font-size: 12px;
+                        width: 20px;
+                        height: 20px;
+                        border-radius: 50%;
+                        background-color: #2879fe;
+                        color: white;
+                        position: absolute;             /* Element is positioned relative to its first positioned (not static) ancestor element */
+                        right: -10px;
+                        top: -10px;
+                        display: flex;
+                        align-items: center;            /* Centered vertically */
+                        justify-content: center;        /* Centered horizontally */
+                    }
+                }
+            }
+        }
+    }
+}
